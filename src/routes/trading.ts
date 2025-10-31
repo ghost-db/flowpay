@@ -1,5 +1,5 @@
 /**
- * PulsePay Trading Routes
+ * FlowPay Trading Routes
  * x402-protected endpoints for Polymarket trading operations
  */
 

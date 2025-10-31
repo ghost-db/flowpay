@@ -1,10 +1,10 @@
-# Getting Started with PulsePay
+# Getting Started with FlowPay
 
-This guide will walk you through setting up and running PulsePay, the x402 payment gateway for Polymarket.
+This guide will walk you through setting up and running FlowPay, the x402 payment gateway for Polymarket.
 
-## What is PulsePay?
+## What is FlowPay?
 
-PulsePay enables AI agents to interact with Polymarket prediction markets through a pay-per-action API. Instead of subscriptions or API keys, agents pay tiny amounts (0.5¢ to 5¢) for each action using the x402 protocol.
+FlowPay enables AI agents to interact with Polymarket prediction markets through a pay-per-action API. Instead of subscriptions or API keys, agents pay tiny amounts (0.5¢ to 5¢) for each action using the x402 protocol.
 
 ## Prerequisites
 
@@ -23,8 +23,8 @@ PulsePay enables AI agents to interact with Polymarket prediction markets throug
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/pulsepay.git
-cd pulsepay
+git clone https://github.com/yourusername/flowpay.git
+cd flowpay
 ```
 
 ### 2. Install Dependencies
@@ -86,7 +86,7 @@ You should see:
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║                      PulsePay v1.0                       ║
+║                      FlowPay v1.0                       ║
 ║     x402 Payment Gateway for Polymarket AI Trading       ║
 ╚══════════════════════════════════════════════════════════╝
 
@@ -223,7 +223,7 @@ curl -X POST \
 
 ## AI Agent Integration Example
 
-Here's a complete example of an AI agent using PulsePay:
+Here's a complete example of an AI agent using FlowPay:
 
 ```python
 # ai_agent.py
@@ -231,9 +231,9 @@ import requests
 from x402_python import X402Client
 
 class PolymarketAgent:
-    def __init__(self, private_key, pulsepay_url):
+    def __init__(self, private_key, flowpay_url):
         self.client = X402Client(private_key)
-        self.base_url = pulsepay_url
+        self.base_url = flowpay_url
 
     def analyze_market(self, token_id):
         # Get quote (pays $0.005)
@@ -268,7 +268,7 @@ class PolymarketAgent:
 # Usage
 agent = PolymarketAgent(
     private_key="0x...",
-    pulsepay_url="http://localhost:3000"
+    flowpay_url="http://localhost:3000"
 )
 
 agent.trade("99476570...", expected_fair_value=0.3)
@@ -281,8 +281,8 @@ agent.trade("99476570...", expected_fair_value=0.3)
 Build and run with Docker:
 
 ```bash
-docker build -t pulsepay .
-docker run -p 3000:3000 --env-file .env pulsepay
+docker build -t flowpay .
+docker run -p 3000:3000 --env-file .env flowpay
 ```
 
 ### Deploy to Railway
@@ -361,7 +361,7 @@ pnpm dev
 
 ## Support
 
-Having issues? Open an issue on the [GitHub repository](https://github.com/yourusername/pulsepay/issues).
+Having issues? Open an issue on the [GitHub repository](https://github.com/yourusername/flowpay/issues).
 
 ---
 

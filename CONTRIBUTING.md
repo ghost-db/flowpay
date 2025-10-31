@@ -1,14 +1,14 @@
-# Contributing to PulsePay
+# Contributing to FlowPay
 
-Thank you for your interest in contributing to PulsePay! We welcome contributions from the community.
+Thank you for your interest in contributing to FlowPay! We welcome contributions from the community.
 
 ## Getting Started
 
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/yourusername/pulsepay.git
-   cd pulsepay
+   git clone https://github.com/yourusername/flowpay.git
+   cd flowpay
    ```
 3. **Install dependencies**:
    ```bash
@@ -143,8 +143,8 @@ Prefix types:
 
 ## License
 
-By contributing to PulsePay, you agree that your contributions will be licensed under the MIT License.
+By contributing to FlowPay, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-Thank you for contributing to PulsePay! 🚀
+Thank you for contributing to FlowPay! 🚀

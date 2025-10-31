@@ -1,5 +1,5 @@
 /**
- * PulsePay Market Data Routes
+ * FlowPay Market Data Routes
  * x402-protected endpoints for Polymarket market data
  */
 
