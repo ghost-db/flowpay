@@ -1,16 +1,16 @@
-# PulsePay
+# FlowPay
 
 **Powering the next wave of on-chain intelligence**
 
-PulsePay connects AI agents to real-world prediction markets, allowing them to buy and sell positions automatically through a single API. No accounts. No subscriptions. No friction — just pay-per-action access.
+FlowPay connects AI agents to real-world prediction markets, allowing them to buy and sell positions automatically through a single API. No accounts. No subscriptions. No friction — just pay-per-action access.
 
-![PulsePay](https://img.shields.io/badge/x402-enabled-blue)
+![FlowPay](https://img.shields.io/badge/x402-enabled-blue)
 ![Node](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Overview
 
-PulsePay is an x402-enabled payment gateway that wraps Polymarket's CLOB (Central Limit Order Book) API, enabling:
+FlowPay is an x402-enabled payment gateway that wraps Polymarket's CLOB (Central Limit Order Book) API, enabling:
 
 🤖 **AI Agents** - Funded agents can request quotes, place orders, and monitor outcomes in real time
 
@@ -41,8 +41,8 @@ PulsePay is an x402-enabled payment gateway that wraps Polymarket's CLOB (Centra
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pulsepay.git
-cd pulsepay
+git clone https://github.com/yourusername/flowpay.git
+cd flowpay
 ```
 
 2. Install dependencies:
@@ -150,10 +150,10 @@ Response:
 
 ## For AI Agents
 
-PulsePay is designed to be easily integrated into AI agent workflows:
+FlowPay is designed to be easily integrated into AI agent workflows:
 
 ```python
-# Example: AI agent using PulsePay
+# Example: AI agent using FlowPay
 import requests
 from x402_client import X402Client
 
@@ -161,13 +161,13 @@ from x402_client import X402Client
 client = X402Client(private_key=AGENT_PRIVATE_KEY)
 
 # Get market quote (automatically handles x402 payment)
-quote = client.get("http://pulsepay.example.com/markets/TOKEN_ID/quote")
+quote = client.get("http://flowpay.example.com/markets/TOKEN_ID/quote")
 
 # Decide based on quote
 if quote['bestBid'] < expected_fair_value:
     # Place order (pays $0.05 automatically)
     order = client.post(
-        "http://pulsepay.example.com/orders",
+        "http://flowpay.example.com/orders",
         json={
             "tokenId": TOKEN_ID,
             "price": quote['bestBid'] + 0.001,
@@ -188,7 +188,7 @@ if quote['bestBid'] < expected_fair_value:
        │ ($0.005-0.05)
        ▼
 ┌─────────────────┐
-│    PulsePay     │
+│    FlowPay      │
 │  (This Server)  │
 └──────┬──────────┘
        │
@@ -228,8 +228,8 @@ pnpm format
 Build and run with Docker:
 
 ```bash
-docker build -t pulsepay .
-docker run -p 3000:3000 --env-file .env pulsepay
+docker build -t flowpay .
+docker run -p 3000:3000 --env-file .env flowpay
 ```
 
 ### Deploy to Cloud Platforms
@@ -263,7 +263,7 @@ Ensure you set environment variables in your deployment platform.
 ## Project Structure
 
 ```
-pulsepay/
+flowpay/
 ├── src/
 │   ├── index.ts              # Main Express server
 │   ├── polymarket-client.ts  # Polymarket CLOB wrapper
@@ -299,7 +299,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/yourusername/pulsepay/issues)
+- Issues: [GitHub Issues](https://github.com/yourusername/flowpay/issues)
 - Docs: [x402 Documentation](https://x402.org/docs)
 
 ---

@@ -1,5 +1,5 @@
 /**
- * PulsePay Test Server (Without x402 Middleware)
+ * FlowPay Test Server (Without x402 Middleware)
  * For testing Polymarket integration
  */
 
@@ -49,7 +49,7 @@ if (POLYMARKET_PRIVATE_KEY) {
 // Welcome endpoint
 app.get('/', (req, res) => {
   res.json({
-    name: 'PulsePay TEST Server',
+    name: 'FlowPay TEST Server',
     version: '1.0.0-test',
     description: 'Testing Polymarket integration (x402 middleware disabled)',
     polymarket_connected: polymarketClient !== null,
@@ -101,7 +101,7 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 app.listen(PORT, () => {
   console.log(`
 ╔══════════════════════════════════════════════════════════╗
-║                   PulsePay TEST Server                   ║
+║                   FlowPay TEST Server                    ║
 ║                (x402 Middleware Disabled)                ║
 ╚══════════════════════════════════════════════════════════╝
 

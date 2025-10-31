@@ -1,5 +1,5 @@
 /**
- * PulsePay Polymarket Client
+ * FlowPay Polymarket Client
  * Wrapper around @polymarket/clob-client for x402 integration
  */
 

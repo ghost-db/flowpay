@@ -1,7 +1,7 @@
 {
-  "name": "pulsepay-test",
+  "name": "flowpay-test",
   "version": "1.0.0-test",
-  "description": "PulsePay test server (without x402)",
+  "description": "FlowPay test server (without x402)",
   "main": "dist/index-test.js",
   "type": "module",
   "scripts": {

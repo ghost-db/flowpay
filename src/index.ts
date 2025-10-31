@@ -1,9 +1,9 @@
 /**
- * PulsePay - x402 Payment Gateway for Polymarket
+ * FlowPay - x402 Payment Gateway for Polymarket
  *
  * Powering the next wave of on-chain intelligence.
  *
- * PulsePay connects AI agents to real-world prediction markets,
+ * FlowPay connects AI agents to real-world prediction markets,
  * allowing them to buy and sell positions automatically through
  * a single API. No accounts. No subscriptions. No friction —
  * just pay-per-action access.
@@ -58,7 +58,7 @@ await polymarketClient.initialize();
 // Welcome endpoint (free)
 app.get('/', (req, res) => {
   res.json({
-    name: 'PulsePay',
+    name: 'FlowPay',
     tagline: 'Powering the next wave of on-chain intelligence',
     description: 'x402 payment gateway for Polymarket AI agent trading',
     version: '1.0.0',
@@ -78,7 +78,7 @@ app.get('/', (req, res) => {
         'GET /trades': 'Get trade history ($0.02)',
       },
     },
-    docs: 'https://github.com/yourusername/pulsepay',
+    docs: 'https://github.com/yourusername/flowpay',
     powered_by: 'x402 Protocol',
   });
 });
@@ -220,7 +220,7 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 app.listen(PORT, () => {
   console.log(`
 ╔══════════════════════════════════════════════════════════╗
-║                      PulsePay v1.0                       ║
+║                      FlowPay v1.0                        ║
 ║     x402 Payment Gateway for Polymarket AI Trading       ║
 ╚══════════════════════════════════════════════════════════╝
 
